@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Grafika Komputer | Anabella Thalety Rizky</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #091322 0%, #101f38 50%, #091322 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* Header Styles */
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            overflow: hidden;
+            background: #112233;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-section h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .npm-text {
+            color: #3b82f6;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .sub-role {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            font-weight: 400;
+        }
+
+        /* Card Panels */
+        .panel {
+            background-color: #0b1329;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .panel-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #3b82f6;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Biodata Styles */
+        .biodata-grid {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            row-gap: 10px;
+            font-size: 1.05rem;
+        }
+
+        .biodata-label {
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .biodata-value {
+            color: #cbd5e1;
+        }
+
+        /* Buttons Grid Layout */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .portfolio-btn {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 55px;
+        }
+
+        .portfolio-btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Kuis Video 4 Highlight Active Style */
+        .btn-highlight {
+            background-color: #3b82f6;
+        }
+        .btn-highlight:hover {
+            background-color: #60a5fa;
+            box-shadow: 0 5px 15px rgba(96, 165, 250, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #64748b;
+            width: 100%;
+        }
+
+        /* Responsive Adjustment */
+        @media (max-width: 600px) {
+            .biodata-grid {
+                grid-template-columns: 1fr;
+                row-gap: 4px;
+            }
+            .header-section h1 {
+                font-size: 1.8rem;
+            }
+            .button-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="header-section">
+            <div class="avatar-container">
+          <img src="foto diri.jpeg" alt="Foto Anabella Thalety Rizky">
+          </div>
+            </div>
+            <h1>Anabella Thalety Rizky</h1>
+            <div class="npm-text">NPM : 2513025005</div>
+            <div class="sub-role">Mahasiswa Pendidikan Teknologi Informasi</div>
+        </header>
+
+        <section class="panel">
+            <h2 class="panel-title">Biodata Mahasiswa</h2>
+            <div class="biodata-grid">
+                <div class="biodata-label">Nama</div>
+                <div class="biodata-value">: Anabella Thalety Rizky</div>
+                
+                <div class="biodata-label">NPM</div>
+                <div class="biodata-value">: 2513025005</div>
+                
+                <div class="biodata-label">Program Studi</div>
+                <div class="biodata-value">: Pendidikan Teknologi Informasi</div>
+                
+                <div class="biodata-label">Mata Kuliah</div>
+                <div class="biodata-value">: Grafika Komputer</div>
+                
+                <div class="biodata-label">Portofolio</div>
+                <div class="biodata-value">: Tugas dan Praktikum Grafika Komputer</div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2 class="panel-title">📚 Soal Pilihan Ganda (PG)</h2>
+            <div class="button-grid">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScKUHjata_BLTjnMTFJQgo45ANaoy2AKvDnYXXj9hdXnyT6tQ/viewform?usp=publish-editor" target="_blank" class="portfolio-btn">PG 1 : Pengertian & Tokoh</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOdEI0eqIkEC5nBv2UEfAmlVve_VaDPH6tGnWokT7LoqINPQ/viewform?usp=header" target="_blank" class="portfolio-btn">PG 2 : Sistem Grafika</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScf0mZJ3XTD_LaTNcMKpfAk0nFoiyjP5BtLGzioT9vJRXxaeQ/viewform?usp=header" target="_blank" class="portfolio-btn">PG 3 : Algoritma Garis</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfomDZOl176V1lDdk6tBRJZ2SBfL1LHUJaUyqh5FK3H0BlhPg/viewform?usp=publish-editor" target="_blank" class="portfolio-btn">PG 4 : Algoritma Lingkaran</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfx4mBMc0NXS5G5YfyCCU8e8o0rsTSuXOnyasu6PpjPV1uaUQ/viewform?usp=publish-editor" target="_blank" class="portfolio-btn">PG 5 : Kurva Bezier</a>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2 class="panel-title">🎥 Tugas Kuis Video</h2>
+            <div class="button-grid">
+                <a href="https://youtu.be/y1WGnuOt9XE?si=j2D2kgAfe9vUUBCD" target="_blank" class="portfolio-btn">Kuis Video 1</a>
+                <a href="https://youtu.be/AoCAvyYUcdM?si=6QCgc3FcarWog3bZ" target="_blank" class="portfolio-btn">Kuis Video 2</a>
+                <a href="https://youtu.be/vdu_E2bXGT8?si=XtN75kEHbiVcdhDq" target="_blank" class="portfolio-btn">Kuis Video 3</a>
+                <a href="https://youtu.be/Tsp8uTuQ160?si=DH_5mEjpnhiDMc_H" target="_blank" class="portfolio-btn btn-highlight">Kuis Video 4</a>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2 class="panel-title">📊 Tabel Iterasi & Spreadsheet</h2>
+            <div class="button-grid">
+                <a href="https://docs.google.com/spreadsheets/d/1chObptaXkEH0d8aGeBcqpHQ3PXxBGMU8Vqk-jTLKF5s/edit?usp=sharing" target="_blank" class="portfolio-btn">Tabel DDA Line</a>
+                <a href="https://docs.google.com/spreadsheets/d/1zauUbXAbrqpP7kyKCbW2Ao2Ur-Hh64JjLJQ7fDz7icw/edit?usp=drive_link" target="_blank" class="portfolio-btn">Tabel Iterasi Circle</a>
+                <a href="https://drive.google.com/drive/folders/1UbV0eX9jPw8t_Re6yRiWPQx_sODf-Hdq?usp=drive_link" target="_blank" class="portfolio-btn">Tabel Iterasi Bezier</a>
+                <a href="https://docs.google.com/spreadsheets/d/1HJ5_yhiU9uxwKVlXQplC6kLV7EZjxsCD/edit?usp=drive_link&ouid=101312370786564827414&rtpof=true&sd=true" target="_blank" class="portfolio-btn">Tabel Transformasi</a>
+                <a href="https://docs.google.com/spreadsheets/d/1HJ5_yhiU9uxwKVlXQplC6kLV7EZjxsCD/edit?usp=drive_link&ouid=101312370786564827414&rtpof=true&sd=true" target="_blank" class="portfolio-btn">Titik Potong Cohen Sutherland</a>
+                <a href="https://docs.google.com/spreadsheets/d/1rW2mTu7a0MCzKbPX_YkGb-c3hUcsh0RX/edit?usp=drive_link&ouid=101312370786564827414&rtpof=true&sd=true" target="_blank" class="portfolio-btn">Polygon Clipping</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 - Portofolio Grafika Komputer | Anabella Thalety Rizky
+    </footer>
+
+</body>
+</html>
